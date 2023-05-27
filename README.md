@@ -7,7 +7,9 @@ for proxy@ubuntu server, use https://raw.githubusercontent.com/leozhaozheng/gfwl
 
 Proxys / CDNs:
 
-- jsDelivr: https://cdn.jsdelivr.net/gh/petronny/gfwlist2pac@master/gfwlist.pac
-- FastGit: https://raw.fastgit.org/petronny/gfwlist2pac/master/gfwlist.pac
-- GitHub Proxy: https://ghproxy.com/https://github.com/petronny/gfwlist2pac/blob/master/gfwlist.pac
-- 7ED SERVICE: https://raw.sevencdn.com/petronny/gfwlist2pac/master/gfwlist.pac
+- jsDelivr: https://cdn.jsdelivr.net/gh/leozhaozheng/gfwlist2pac@master/gfwlist-local.pac
+- jsDelivr: https://cdn.jsdelivr.net/gh/leozhaozheng/gfwlist2pac@master/gfwlist-ubuntu.pac
+- FastGit: https://raw.fastgit.org/leozhaozheng/gfwlist2pac/master/gfwlist-local.pac
+- FastGit: https://raw.fastgit.org/leozhaozheng/gfwlist2pac/master/gfwlist-ubuntu.pac
+- GitHub Proxy: https://ghproxy.com/https://github.com/leozhaozheng/gfwlist2pac/blob/master/gfwlist-local.pac
+- GitHub Proxy: https://ghproxy.com/https://github.com/leozhaozheng/gfwlist2pac/blob/master/gfwlist-ubuntu.pac
