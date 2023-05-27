@@ -1,7 +1,8 @@
 # gfwlist2pac
 Automatically convert gfwlist to pac everyday
 
-Just use https://raw.githubusercontent.com/petronny/gfwlist2pac/master/gfwlist.pac
+for proxy@local host, use https://raw.githubusercontent.com/leozhaozheng/gfwlist2pac/master/gfwlist-local.pac
+for proxy@ubuntu server, use https://raw.githubusercontent.com/leozhaozheng/gfwlist2pac/master/gfwlist-ubuntu.pac
 
 Proxys / CDNs:
 
