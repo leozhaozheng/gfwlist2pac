@@ -40,11 +40,14 @@ jobs:
       - name: Update
         run: |
           set -x
-
+                   
           genpac --pac-proxy "SOCKS5 127.0.0.1:1088; SOCKS 127.0.0.1:1088; DIRECT;" --gfwlist-url - --gfwlist-local gfwlist/gfwlist.txt -o gfwlist-local.pac
           sed '1,7d' -i gfwlist-local.pac
+          
+          genpac --pac-proxy "SOCKS5 ubuntu:1088; SOCKS ubuntu:1088; DIRECT;" --gfwlist-url - --gfwlist-local gfwlist/gfwlist.txt -o gfwlist-ubuntu.pac
+          sed '1,7d' -i gfwlist-ubuntu.pac
 
-          git add gfwlist-local.pac
+          git add gfwlist-local.pac gfwlist-ubuntu.pac
           git commit -m "[$(LANG=C date)] auto update" || exit 0
 
           [ -n "${{ secrets.READ_ONLY }}" ] && git show && exit 0
