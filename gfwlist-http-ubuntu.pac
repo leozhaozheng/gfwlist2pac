@@ -1,4 +1,4 @@
-var proxy = 'http ubuntu:8118';
+var proxy = 'https ubuntu:8118; http ubuntu:8118; DIRECT;';
 var rules = [
     [
         [],

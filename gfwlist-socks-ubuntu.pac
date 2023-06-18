@@ -1,4 +1,4 @@
-var proxy = 'SOCKS5 ubuntu:1088';
+var proxy = 'SOCKS5 ubuntu:1088; SOCKS ubuntu:1088; DIRECT;';
 var rules = [
     [
         [],
