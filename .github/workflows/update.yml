@@ -44,10 +44,10 @@ jobs:
           genpac --pac-proxy "SOCKS5 127.0.0.1:1088; SOCKS 127.0.0.1:1088; DIRECT;" --gfwlist-url - --gfwlist-local gfwlist/gfwlist.txt -o gfwlist-socks-local.pac
           sed '1,7d' -i gfwlist-socks-local.pac
           
-          genpac --pac-proxy "SOCKS5 ubuntu:1088" --gfwlist-url - --gfwlist-local gfwlist/gfwlist.txt -o gfwlist-socks-ubuntu.pac
+          genpac --pac-proxy "SOCKS5 ubuntu:1088; SOCKS ubuntu:1088; DIRECT;" --gfwlist-url - --gfwlist-local gfwlist/gfwlist.txt -o gfwlist-socks-ubuntu.pac
           sed '1,7d' -i gfwlist-socks-ubuntu.pac
 
-          genpac --pac-proxy "http ubuntu:8118" --gfwlist-url - --gfwlist-local gfwlist/gfwlist.txt -o gfwlist-http-ubuntu.pac
+          genpac --pac-proxy "https ubuntu:8118; http ubuntu:8118; DIRECT;" --gfwlist-url - --gfwlist-local gfwlist/gfwlist.txt -o gfwlist-http-ubuntu.pac
           sed '1,7d' -i gfwlist-http-ubuntu.pac
 
           git add gfwlist-socks-local.pac gfwlist-socks-ubuntu.pac gfwlist-http-ubuntu.pac
