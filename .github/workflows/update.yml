@@ -50,7 +50,7 @@ jobs:
           genpac --pac-proxy "https 192.168.31.248:8118; http 192.168.31.248:8118; DIRECT;" --gfwlist-url - --gfwlist-local gfwlist/gfwlist.txt -o gfwlist-http-debian.pac
           sed '1,7d' -i gfwlist-http-debian.pac
 
-          git add gfwlist-socks-local.pac gfwlist-socks-ubuntu.pac gfwlist-http-ubuntu.pac
+          git add gfwlist-socks-local.pac gfwlist-socks-debian.pac gfwlist-http-debian.pac
           git commit -m "[$(LANG=C date)] auto update" || exit 0
 
           [ -n "${{ secrets.READ_ONLY }}" ] && git show && exit 0
