@@ -47,7 +47,7 @@ jobs:
           genpac --pac-proxy "SOCKS5 192.168.31.114:1088; SOCKS 192.168.31.114:1088; DIRECT;" --gfwlist-url - --gfwlist-local gfwlist/gfwlist.txt -o gfwlist-socks-debian.pac
           sed '1,7d' -i gfwlist-socks-debian.pac
 
-          genpac --pac-proxy "https 192.168.31.114:8080; http 192.168.31.114:8080; DIRECT;" --gfwlist-url - --gfwlist-local gfwlist/gfwlist.txt -o gfwlist-http-debian.pac
+          genpac --pac-proxy "http 192.168.31.114:8080; http 192.168.31.114:8080; DIRECT;" --gfwlist-url - --gfwlist-local gfwlist/gfwlist.txt -o gfwlist-http-debian.pac
           sed '1,7d' -i gfwlist-http-debian.pac
 
           git add gfwlist-socks-local.pac gfwlist-socks-debian.pac gfwlist-http-debian.pac
