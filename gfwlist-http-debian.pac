@@ -1,4 +1,4 @@
-var proxy = 'https 192.168.31.114:8080; http 192.168.31.114:8080; DIRECT;';
+var proxy = 'http 192.168.31.114:8080; http 192.168.31.114:8080; DIRECT;';
 var rules = [
     [
         [],
